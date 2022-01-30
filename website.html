@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: aliceblue;
+            background: url('https://wallsfly.com/wp-content/uploads/2021/11/Gojo-Satoru-Wallpaper-Laptop.png');
+            background-size: 1400px;
+            font-family: 'Cinzel', serif;
+        }
+
+        h5 {
+            margin: 2px;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            width: auto;
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            overflow: auto;
+
+
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 136px;
+            margin: auto;
+            
+        }
+        
+
+        .left div h5 {
+            margin: 4px;
+            text-align: center;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 600px;
+            margin: 24px auto;
+            position: sticky;
+            top: 24px;
+        }
+
+        .navbar {
+            display: inline-block;
+            margin: 2px;
+            font-size: 20px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+        }
+
+        .navbar li a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 3px 2px;
+            margin: 20px;
+
+
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+
+        .navbar li a:active {
+            color: rgb(255, 58, 255);
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            position: absolute;
+            right: 46px;
+            top: 24px;
+        }
+
+        .btn {
+            font-family: 'Cinzel', serif;
+            background-color: red;
+            border-radius: 7px;
+            color: rgb(252, 29, 0);
+            padding: 4px;
+            font-weight: bold;
+            background: none;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            color: rgb(153, 49, 238);
+            /* background-color: rgb(192, 7, 192); */
+
+        }
+
+        .btn:active{
+            color: rgb(209, 168, 255);
+        }
+
+        .info {
+            
+            border: 2px solid red;
+            position: absolute;
+            border-radius: 4px;
+            top: 240px;
+            left: 240px;
+
+
+        }
+
+        .info input {
+            display: block;
+            /* color: rgb(238, 10, 10); */
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            margin: 5px;
+            background: rgba(20, 19, 19, 0.671);
+            text-align: center;
+            border-radius: 5px;
+            color: rgb(211, 136, 255);
+            width: 300px;
+
+        }
+
+        ::placeholder {
+            color: rgb(211, 136, 255);
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+
+        }
+
+        .submit {
+            width: 200px;
+            margin: 0px 4px;
+            color: aliceblue;
+            background: none;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+
+        }
+
+        .submit:hover {
+            color: rgb(255, 23, 23);
+            background: rgb(4, 0, 5);
+        }
+        .submit:active{
+            color: rgb(106, 9, 151);
+            background: rgba(238, 231, 230, 0.384);
+        }
+
+	.sub:hover{
+		cursor:pointer;
+	}
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAywg8Ral3K3NHph88m2AIfqrtDFzHmXPOQ&usqp=CAU" alt="">
+                <div class="logo">
+                    <h5>Hidden Leaf Village</h5>
+                </div>
+            </div>
+            <div class="mid">
+                <ul class="navbar">
+                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#">Movies</a> </li>
+                    <li> <a href="#">Series</a> </li>
+                    <li> <a href="#">Know More</a> </li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Email</button>
+                <button class="btn">Phone No </button>
+            </div>
+        </div>
+    </header>
+    <div class="info">
+        <form action="noaction.php" class="grp">
+            <input type="text" placeholder="Enter your Name">
+            <input type="text" placeholder="Enter your Age">
+            <input type="text" placeholder="Enter your Mobile No">
+            <input type="text" placeholder="Enter your Email">
+	    
+            <div class="sub">
+            	<input type="submit" value="Submit Now">
+            	<input type="reset" value="Reset Now">
+            </div>
+
+        </form>
+        
+    </div>
+</body>
+
+</html>
